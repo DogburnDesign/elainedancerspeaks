@@ -1,0 +1,54 @@
+/* VARIABLES */
+@darkPrimaryColor:   #512DA8;
+@primaryColor:       #673AB7;
+@lightPrimaryColor:  #D1C4E9;
+@textPrimaryColor:   #FFFFFF;
+@accentColor:        #448AFF;
+@primaryTextColor:   #212121;
+@secondaryTextColor: #727272;
+@dividerColor:       #B6B6B6;
+.btn-gradient{
+        background: rgba(54,113,209,1);
+        background: -moz-linear-gradient(left, rgba(54,113,209,1) 0%, rgba(68,137,255,1) 50%, rgba(54,113,209,1) 100%);
+        background: -webkit-gradient(left top, right top, color-stop(0%, rgba(54,113,209,1)), color-stop(50%, rgba(68,137,255,1)), color-stop(100%, rgba(54,113,209,1)));
+        background: -webkit-linear-gradient(left, rgba(54,113,209,1) 0%, rgba(68,137,255,1) 50%, rgba(54,113,209,1) 100%);
+        background: -o-linear-gradient(left, rgba(54,113,209,1) 0%, rgba(68,137,255,1) 50%, rgba(54,113,209,1) 100%);
+        background: -ms-linear-gradient(left, rgba(54,113,209,1) 0%, rgba(68,137,255,1) 50%, rgba(54,113,209,1) 100%);
+        background: linear-gradient(to right, rgba(54,113,209,1) 0%, rgba(68,137,255,1) 50%, rgba(54,113,209,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3671d1', endColorstr='#3671d1', GradientType=1 );
+    }
+
+
+/* IMPORTS AND FONTS */
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic|Roboto:400,100,900italic,900,700italic,700,500italic,500,400italic,300,100italic,300italic);
+
+/* GLOBAL */
+body{
+    font-family: 'Roboto', sans-serif;
+}
+h1,h2,h3,h4,h5{
+    font-family: 'Droid Serif', serif;
+}
+
+/* VIDEO BACKGROUND */
+video#bgvid {
+    position: fixed; right: 0; bottom: 0;
+    min-width: 100%; min-height: 100%;
+    width: auto; height: auto; z-index: -100;
+    background: url(images/itsallaboutlove-bg.jpg) no-repeat;
+    background-size: cover;
+}
+
+/* BUTTONS */
+.eds-btn{
+    background: 0;
+    border-radius: 0;
+    color: @textPrimaryColor;
+    transition: all .2s;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+}
+.eds-btn:hover{
+    color:@textPrimaryColor;
+    .btn-gradient();
+}
