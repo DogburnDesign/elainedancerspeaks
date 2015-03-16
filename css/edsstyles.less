@@ -47,8 +47,31 @@ video#bgvid {
     transition: all .2s;
     -webkit-transition: all .2s;
     -moz-transition: all .2s;
+    font-family: 'Droid Serif', serif;
 }
 .eds-btn:hover{
     color:@textPrimaryColor;
-    .btn-gradient();
+    background: fadeout(@accentColor,50%);
+}
+.eds-btn:focus{
+    background: @accentColor;
+    color:@textPrimaryColor;
+}
+
+
+/* SPLASH PAGE */
+.eds-comingsoon{
+    margin-top: 5%;
+}
+.eds-comingsoon h1{
+    color:@textPrimaryColor;
+    text-align: center;
+}
+.eds-comingsoon p{
+    color:@textPrimaryColor;
+}
+.eds-shortdesc{
+    background: rgba(0,0,0,.5);
+    padding: 15px 10px;
+    margin-bottom: 10px;
 }
